@@ -86,29 +86,31 @@ public class Manager : MonoBehaviour
             botones[Posicion].Seleccionado = true;
             msg = "1";
         }
-
-        if (botones[0].Seleccionado && msg == "4")
+        if (msg == "4")
         {
-            print("Arriba");
-            msg = "1";
-        }
+            if (botones[0].Seleccionado)
+            {
+                print("Arriba");
+                msg = "1";
+            }
 
-        if (botones[1].Seleccionado && msg == "4")
-        {
-            print("Izquierda");
-            msg = "1";
-        }
+            if (botones[1].Seleccionado)
+            {
+                print("Izquierda");
+                msg = "1";
+            }
 
-        if (botones[2].Seleccionado && msg == "4")
-        {
-            print("Abajo");
-            msg = "1";
-        }
+            if (botones[2].Seleccionado)
+            {
+                print("Abajo");
+             msg = "1";
+            }
 
-        if (botones[3].Seleccionado && msg == "4")
-        {
-            print("Derecha");
-            msg = "01";
+            if (botones[3].Seleccionado)
+            {
+                print("Derecha");
+                msg = "1";
+            }
         }
     }
 
