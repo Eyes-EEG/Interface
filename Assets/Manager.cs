@@ -38,7 +38,7 @@ public class Manager : MonoBehaviour
             
         }
 
-        if (msg == "2")
+        if (msg == "3")
         {
             botones[Posicion].Seleccionado = false;
             Posicion++;
@@ -63,7 +63,7 @@ public class Manager : MonoBehaviour
 
         }
 
-        if (msg == "3")
+        if (msg == "4")
         {
             botones[Posicion].Seleccionado = false;
             Posicion--;
@@ -86,7 +86,7 @@ public class Manager : MonoBehaviour
             botones[Posicion].Seleccionado = true;
             msg = "1";
         }
-        if (msg == "4")
+        if (msg == "2")
         {
             if (botones[0].Seleccionado)
             {
